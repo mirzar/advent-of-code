@@ -1,7 +1,8 @@
 const fs = require("fs");
+const inputFile = "input-1.txt";
 
 const part1 = () => {
-	fs.readFile("../inputs/1.txt", "utf-8", function (err, data) {
+	fs.readFile(inputFile, "utf-8", function (err, data) {
 		data = data.split("\n");
 		data = data.map((x) => parseInt(x));
 		var output = 0;
@@ -17,7 +18,7 @@ const part1 = () => {
 };
 
 const part2 = () => {
-	fs.readFile("../inputs/1.txt", "utf-8", function (err, data) {
+	fs.readFile(inputFile, "utf-8", function (err, data) {
 		data = data.split("\n");
 		data = data.map((x) => parseInt(x));
 		output = inputToOutput(data);

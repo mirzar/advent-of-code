@@ -1,5 +1,8 @@
-# advent-of-code
+# Advent of Code
 
-To run :
-`cd day`
-`node 1.js`
+To Run
+
+```
+cd day
+node 1.js
+```
