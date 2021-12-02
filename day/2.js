@@ -18,14 +18,15 @@ const part1 = () => {
   let horizontal = 0;
   let depth = 0;
   for (let {movement, amount} of input) {
-    if (movement === 'up') {
-      depth -= amount;
-    } else if (movement === 'down') {
-      depth += amount;
-    } else if (movement === 'forward') {
-      horizontal += amount;
-    } else {
-      throw new Error(`Unknown movement: ${movement}`);
+    switch (movement) {
+      case 'up':
+        depth -= amount;
+      case 'down':
+        depth += amount;
+      case 'forward':
+        horizontal += amount;
+      default:
+      // throw new Error(`Unknown movement: ${movement}`);
     }
   }
   console.log(`Part 1 Solution is`, depth * horizontal);
@@ -43,8 +44,6 @@ const part2 = () => {
     } else if (movement === 'forward') {
       horizontal += amount;
       depth += aim * amount;
-    } else {
-      throw new Error(`Unknown movement: ${movement}`);
     }
   }
   console.log(`Part 2 Solution is`, depth * horizontal);
