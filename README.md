@@ -3,6 +3,6 @@
 To Run
 
 ```
-cd day
-node 1.js
+cd 2022
+node day1.js
 ```
