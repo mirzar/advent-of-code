@@ -12,7 +12,6 @@ const items = groups.map((x) =>
 const answer = Math.max(...items);
 console.log("Part One:",answer);
 
-
 // Part Two
 const items2 = groups.map((x) =>
   x
