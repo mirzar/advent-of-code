@@ -10,8 +10,6 @@ const parseLines = fileName => {
 
 const input = parseLines('inputs/day3.txt').map(x => x.replace(' ', ''));
 
-// const input = parseFile('inputs/day3.txt');
-
 const capitalLetters = 38;
 const lowerLetters = 96;
 
